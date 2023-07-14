@@ -10,7 +10,7 @@ namespace LogicalPrograms
             while (flag)
             {
                 Console.WriteLine("Enter input to be executed\n 1.Fibonacci Series\n 2.Perfect Number\n" +
-                    " 3.Prime Number\n 4.Reverse Number\n 5.Exit\n");
+                    " 3.Prime Number\n 4.Reverse Number\n 5.Stop Watch\n 6.Exit\n");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -31,6 +31,10 @@ namespace LogicalPrograms
                         reverseNumber.PrintReverseNumber();
                         break;
                     case 5:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.Run();
+                        break;
+                    case 6:
                         flag = false;
                         break;
 
